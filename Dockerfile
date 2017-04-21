@@ -28,3 +28,4 @@ RUN install_packages \
 	php5-dev \
 	make
 RUN pecl install redis && apt-get -y purge php5-dev make && apt-get -y autoremove
+RUN echo "extension=redis.so" > /etc/php5/conf.d/redis.ini
