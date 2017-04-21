@@ -24,4 +24,7 @@ RUN install_packages \
 	php5-imap \
 	libphp-phpmailer \
 	php-mail-mimedecode \
-	smarty
+	smarty \
+	php5-dev \
+	make
+RUN pecl install redis && apt-get purge php4-dev make && apt-get autoremove
