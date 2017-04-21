@@ -27,4 +27,4 @@ RUN install_packages \
 	smarty \
 	php5-dev \
 	make
-RUN pecl install redis && apt-get purge php4-dev make && apt-get autoremove
+RUN pecl install redis && apt-get purge php5-dev make && apt-get autoremove
